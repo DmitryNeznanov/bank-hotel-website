@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-miracle font-normal;
+  }
+  p {
+    @apply font-helvetica font-[55];
+  }
+}
+@layer components {
+  /* Heading  */
+  .heading-xxl {
+    @apply text-[70px]/[60px] lg:text-[220px]/[72px];
+  }
+  .heading-xl {
+    @apply text-[50px]/[40px] lg:text-[150px]/[130px];
+  }
+  .heading-lg {
+    @apply text-[40px]/[30px] lg:text-[120px]/[100px];
+  }
+  .heading-md {
+    @apply text-[30px]/[30px] lg:text-[80px]/[80px];
+  }
+  .heading-xs {
+    @apply text-[24px]/[20px] lg:text-[36px]/[46px];
+  }
+  .heading-xxs {
+    @apply text-[26px]/[36px];
+  }
+  .heading-xxxs {
+    @apply text-[18px]/[28px];
+  }
+  /* Paragraphs */
+  .p-lg {
+    @apply text-[26px]/[31px];
+  }
+  .p-md {
+    @apply text-[18px]/[26px];
+  }
+  .p-sm {
+    @apply text-[16px]/[28px];
+  }
+  .p-xs {
+    @apply text-[14px]/[24px];
+  }
+}
+@layer utilities {
+}
